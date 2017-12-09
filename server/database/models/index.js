@@ -40,6 +40,6 @@ db.Sequelize = Sequelize;
 
 // DANGEROUS!!!!
 // DANGEROUS!!! if uncommented:
-// sequelize.sync({force: true}); // DELETES AND RESETS DATABASE
+sequelize.sync({force: true}); // DELETES AND RESETS DATABASE
 
 module.exports = db;
