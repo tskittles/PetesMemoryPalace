@@ -31,6 +31,7 @@ dbFuncs.newImage = (req, res, next) => {
 }
 
 dbFuncs.storeNode = (req, res, next) => {
+  console.log("COOKIE ",  req.cookies.palaceId);
   req.body.PalaceId = req.cookies.palaceId;
   db.Node.create(req.body)
     .then(() => {
